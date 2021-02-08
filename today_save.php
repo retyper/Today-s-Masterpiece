@@ -30,7 +30,7 @@ $sql = "
 $result = mysqli_query($conn, $sql);
 if($result === false){
     echo mysqli_error($conn);
-    echo '저장실패. 관리자에게 보고';
+    echo '저장실패. 관리자에게 보고하세요';
 } else {
   header('location: record.php');
 }
