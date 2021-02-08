@@ -1,0 +1,137 @@
+<!DOCTYPE>
+
+<html>
+<head>
+  <title>Today's Masterpiece</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+      <!-- Header -->
+        <header id="header" class="alt">
+          <div class="logo"><a href="index.html">Today's Masterpiece <span>by Retyper</span></a></div>
+          <a href="#menu">Menu</a>
+        </header>
+
+      <!-- Nav -->
+        <nav id="menu">
+          <ul class="links">
+            <li><a href="index.php">Home</a></li>
+          </ul>
+        </nav>
+
+        <!-- Banner -->
+          <section class="banner full">
+            <article>
+              <img src="images/slide01.jpg" alt="" />
+              <div class="inner">
+                <header>
+                  <p>미(美)를 창조·표현하려고 하는 인간 활동 및 그 작품</a></p>
+                  <h2>예술</h2>
+                </header>
+              </div>
+            </article>
+            <article>
+              <img src="images/slide02.jpg" alt="" />
+              <div class="inner">
+                <header>
+                  <p>새로운 것을 처음으로 만드는 것</p>
+                  <h2>창작</h2>
+                </header>
+              </div>
+            </article>
+            <article>
+              <img src="images/slide03.jpg"  alt="" />
+              <div class="inner">
+                <header>
+                  <p>원상과 비슷한 모상을 만들어내는 것</p>
+                  <h2>모방</h2>
+                </header>
+              </div>
+            </article>
+            <article>
+              <img src="images/slide04.jpg"  alt="" />
+              <div class="inner">
+                <header>
+                  <p>예술 작품을 이해하여 즐기고 평가하는 것</p>
+                  <h2>감상</h2>
+                </header>
+              </div>
+            </article>
+            <article>
+              <img src="images/slide05.jpg"  alt="" />
+              <div class="inner">
+                <header>
+                  <p>대상을 파악하고 가능성을 예측하며 지식이나 개념을 만들어 내는 활동</p>
+                  <h2>사유</h2>
+                </header>
+              </div>
+            </article>
+          </section>
+
+          <!-- 1 -->
+      			<section id="one" class="wrapper style2">
+      				<div class="inner">
+                <header class="align-center">
+      						<h2>로그인</h2>
+      					</header>
+                <div>
+                  <form method='post' action='login_action.php'>
+                    <div style="text-align: center;">
+                      <div>
+                        <div class="12u$" >
+                          <input type="text" name="id" id="name" value="" placeholder="id" />
+                        </div>
+                      </div>
+                      <br>
+                      <br>
+                      <div style="text-align: center;">
+                        <div class="12u$">
+                          <input type="password" name="pw" value="" placeholder="password" />
+                        </div>
+                      </div>
+                              <br>
+                      <!-- Break -->
+                      <div class="12u$">
+                        <ul class="actions">
+                          <li><input type="submit" value="로그인" /></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="align-center">
+                  <button id="join" onclick="location.href='./join.php'">간편 관람객 등록</button>
+                </div>
+                <br>
+
+      				</div>
+      			</section>
+
+        <!-- Footer -->
+          <footer id="footer">
+            <div class="container">
+              <ul class="icons">
+                <li><a href="https://twitter.com/?lang=ko" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://ko-kr.facebook.com/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.instagram.com/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+              </ul>
+            </div>
+            <div class="copyright">
+              &copy; Untitled. All rights reserved.
+            </div>
+          </footer>
+
+        <!-- Scripts -->
+          <script src="assets/js/jquery.min.js"></script>
+          <script src="assets/js/jquery.scrollex.min.js"></script>
+          <script src="assets/js/skel.min.js"></script>
+          <script src="assets/js/util.js"></script>
+          <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
