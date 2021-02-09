@@ -6,7 +6,6 @@ if(!isset($_SESSION["userid"]))
 header("location:login.php");
 }
 
-
 $myid = $_SESSION['audience_id'];
 
 $sql = "SELECT * FROM my_impression WHERE audience_id = '$myid'";

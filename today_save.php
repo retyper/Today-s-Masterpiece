@@ -6,6 +6,7 @@ if(!isset($_SESSION["userid"]))
 
 header("location:login.php");
 }
+//인서트 하기 전에 여기서 최신 저장시간 비교 해야함!!!
 
 $filtered = array(
   'audience_id'=>mysqli_real_escape_string($conn, $_POST['audience_id']),
