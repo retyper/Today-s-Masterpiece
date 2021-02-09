@@ -2,7 +2,7 @@
 $conn = mysqli_connect(
  'localhost',
  'root',
- 'dhfhfk12',
+ '}gCl!{nT80@TFdOS',
  'todays_masterpiece')
  or die ("connect fail");
 
