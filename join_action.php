@@ -22,12 +22,7 @@
 <?php
 } else {
 
-  $conn = mysqli_connect(
-  'localhost',
-  'root',
-  'dhfhfk12',
-  'todays_masterpiece')
-  or die("fail");
+  include "db.php";
 
   $filtered = array(
     'id'=>mysqli_real_escape_string($conn, $_POST['id']),

@@ -7,7 +7,6 @@ if(!isset($_SESSION["userid"]))
 header("location:login.php");
 }
 
-
 $picname = $_POST['picname'];
 
 
@@ -36,7 +35,7 @@ while($row = mysqli_fetch_array($result)){
         <input type ="submit" value = "'.$row['title'].'" class="button alt fit" style="margin-bottom: 0px;">
       </form>
     </td>
-    <td class="button alt">
+    <td>
       <button type="button" class="btn-like" data-article-id="'.$seq.'">
       <span class="heart-shape">♡</span>
       <span class="like-count">'.$row['like_count'].'</span>
@@ -112,18 +111,18 @@ if(isset($_POST['impression_id'])){
 		<link rel="stylesheet" href="assets/css/main.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/phpex.js"></script>
-    <style media="screen">
+    <style>
     .btn-like .heart-shape {
       display: inline;
       color: red;
     }
     .btn-like {
+      display: none;
       border: none;
       background-color: inherit;
     }
     </style>
-
+    <script type="text/javascript" src="js/phpex.js"></script>
 
 	</head>
 	<body class="subpage">

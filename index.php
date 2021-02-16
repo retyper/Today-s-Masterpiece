@@ -30,11 +30,6 @@ if(isset($row['created'])){
   	$today_link = '<a href="today.php">오늘의 명화 감상하기</a>';
 }
 
-
-$banner = '
-
-';
-
 ?>
 
 <!DOCTYPE html>
@@ -84,6 +79,7 @@ $banner = '
       					</header>
       				 </div>
       			</section>
+
           <!-- 3 -->
             <section id="two" class="wrapper style3">
               <div class="inner">

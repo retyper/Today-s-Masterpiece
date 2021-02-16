@@ -38,7 +38,7 @@ header("location:login.php");
     <!-- 1 -->
       <section id="main" class="container">
 
-        <div class="image fit"><!--record 에서 전달된 주소 필요함..-->
+        <div class="image fit">
           <a href="<?=$_POST['picture_path']?>" rel="lightbox"><img src="<?=$_POST['picture_path']?>" alt="그림을 찾을수 없습니다."></a>
         </div>
 

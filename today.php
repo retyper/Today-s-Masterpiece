@@ -100,8 +100,8 @@ $todayinfo = $info[$select];
                 </header>
                 <div class="12u$">
                   <form action="today_save.php" method="post" class="align-center" >
-                    <input type = "hidden" value = "<?=$myid?>" name = audience_id>
-                    <input type = "hidden" value = "<?=$todayid?>" name = picture_id>
+                    <input type = "hidden" value = "<?=$myid?>" name = "audience_id">
+                    <input type = "hidden" value = "<?=$todayid?>" name = "picture_id">
                     <textarea name="impression" rows="10" cols="100" placeholder="당신의 감상을 작성해보세요."></textarea>
                     <br><br>
                     <input type="submit" value="저장">
