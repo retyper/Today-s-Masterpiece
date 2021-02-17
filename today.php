@@ -60,7 +60,6 @@ $todayinfo = $info[$select];
 		<link rel="stylesheet" href="assets/css/main.css" />
     <link href="css/lightbox.css" rel="stylesheet" />
     <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/lightbox.js"></script>
   </head>
 	<body class="subpage">
 
@@ -83,7 +82,7 @@ $todayinfo = $info[$select];
         <section id="main" class="container">
 
               <div class="image fit">
-                <a href="<?=$todaypath?>" rel="lightbox"><img src="<?=$todaypath?>" alt="그림을 찾을수 없습니다."></a>
+                <a href="<?=$todaypath?>" data-lightbox="<?=$todayname?>" data-title="<?=$todayname?>"><img src="<?=$todaypath?>" alt="그림을 찾을수 없습니다."></a>
               </div>
 
           <hr/>
@@ -133,7 +132,7 @@ $todayinfo = $info[$select];
     			<script src="assets/js/skel.min.js"></script>
     			<script src="assets/js/util.js"></script>
     			<script src="assets/js/main.js"></script>
-
+          <script src="js/lightbox.js"></script>
 
   </body>
 </html>

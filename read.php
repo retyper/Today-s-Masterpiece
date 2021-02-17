@@ -14,9 +14,9 @@ header("location:login.php");
     <meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/lightbox.min.css" rel="stylesheet" />
     <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/lightbox.js"></script>
+
   </head>
 	<body class="subpage">
 
@@ -39,7 +39,7 @@ header("location:login.php");
       <section id="main" class="container">
 
         <div class="image fit">
-          <a href="<?=$_POST['picture_path']?>" rel="lightbox"><img src="<?=$_POST['picture_path']?>" alt="그림을 찾을수 없습니다."></a>
+          <a href="<?=$_POST['picture_path']?>" data-lightbox="<?=$_POST['picture_name']?>" data-title="<?=$_POST['picture_name']?>"><img src="<?=$_POST['picture_path']?>" alt="그림을 찾을수 없습니다."></a>
         </div>
 
         <hr/>
@@ -107,7 +107,7 @@ header("location:login.php");
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-
+  <script src="js/lightbox.min.js"></script>
 
 </body>
 </html>
