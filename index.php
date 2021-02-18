@@ -175,12 +175,18 @@ if(isset($row['created'])){
            </article>
          </section>
 
- 				 <div align='center'>
-					 <br>
-					 <button onclick="location.href='./login.php'">로그인하기</button>
-					 <br>
- 					 <br>
- 				 </div>
+         <section id="three" class="wrapper style2">
+           <div class="inner">
+             <header class="align-center">
+     					 <br>
+     					 <button onclick="location.href='./login.php'">로그인하기</button>
+     					 <br>
+               <br>
+               <br>
+               <br>
+             </header>
+            </div>
+         </section>
 				 <?php   }
 				 ?>
 

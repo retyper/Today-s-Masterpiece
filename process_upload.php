@@ -37,7 +37,18 @@ if($result === false){
     $finish = '<h2>저장실패. 관리자에게 보고</h2>';
 } else {
   $finish = '
-  <h2>공유 완료</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2>감상을
+  <br>공유 하였습니다.</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <p>
   <form action="server.php" method="post">
     <input type ="hidden" value = "'.$_POST['picname'].'" name = "picname">

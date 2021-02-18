@@ -22,7 +22,17 @@ if($result === false){
     $finish = '<h2>삭제실패. 관리자에게 보고</h2>';
 } else {
   $finish = '
-  <h2>삭제 완료</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2>감상이<br>삭제 되었습니다.</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <p>
   <form action="server.php" method="post">
     <input type ="hidden" value = "'.$_POST['picname'].'" name = "picname">
