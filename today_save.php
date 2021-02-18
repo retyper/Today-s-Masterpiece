@@ -14,26 +14,91 @@ $filtered = array(
   'impression'=>mysqli_real_escape_string($conn, $_POST['impression'])
 );
 
-$sql = "
-  INSERT INTO my_impression(
-    audience_id,
-    picture_id,
-    impression,
-    created
-  )
-    VALUES(
-        '{$filtered['audience_id']}',
-        '{$filtered['picture_id']}',
-        '{$filtered['impression']}',
-        NOW()
+$myid = $_SESSION['audience_id'];
+
+$sql = "SELECT * FROM my_impression WHERE audience_id ='$myid' ORDER BY created DESC limit 1";
+$result = mysqli_query($conn,$sql);
+$row = mysqli_fetch_array($result);
+
+date_default_timezone_set('Asia/Seoul');
+
+if(isset($row['created'])){
+  $now = strtotime(date("Y-m-d H:i:s"));
+  $target_time = strtotime(date("08:00:00"));
+  $lastcreated_time = strtotime($row['created']);
+  $Y_target_time = $target_time - "86400";
+
+  if($now >= $target_time){
+    if($lastcreated_time < $target_time){
+      $sql = "
+        INSERT INTO my_impression(
+          audience_id,
+          picture_id,
+          impression,
+          created
+        )
+          VALUES(
+              '{$filtered['audience_id']}',
+              '{$filtered['picture_id']}',
+              '{$filtered['impression']}',
+              NOW()
+          )
+      ";
+      $result = mysqli_query($conn, $sql);
+      if($result === false){
+          echo mysqli_error($conn);
+          echo '저장실패. 관리자에게 보고하세요';
+      } else {
+        header('location: record.php');
+      }
+    }
+  } else{
+    if($Y_target_time > $lastcreated_time){
+      $sql = "
+        INSERT INTO my_impression(
+          audience_id,
+          picture_id,
+          impression,
+          created
+        )
+          VALUES(
+              '{$filtered['audience_id']}',
+              '{$filtered['picture_id']}',
+              '{$filtered['impression']}',
+              NOW()
+          )
+      ";
+      $result = mysqli_query($conn, $sql);
+      if($result === false){
+          echo mysqli_error($conn);
+          echo '저장실패. 관리자에게 보고하세요';
+      } else {
+        header('location: record.php');
+      }
+    }
+  }
+} else{
+  $sql = "
+    INSERT INTO my_impression(
+      audience_id,
+      picture_id,
+      impression,
+      created
     )
-";
-$result = mysqli_query($conn, $sql);
-if($result === false){
-    echo mysqli_error($conn);
-    echo '저장실패. 관리자에게 보고하세요';
-} else {
-  header('location: record.php');
+      VALUES(
+          '{$filtered['audience_id']}',
+          '{$filtered['picture_id']}',
+          '{$filtered['impression']}',
+          NOW()
+      )
+  ";
+  $result = mysqli_query($conn, $sql);
+  if($result === false){
+      echo mysqli_error($conn);
+      echo '저장실패. 관리자에게 보고하세요';
+  } else {
+    header('location: record.php');
+  }
 }
 
 ?>
