@@ -46,6 +46,7 @@ if(isset($row['created'])){
 	<?php
 		 if(isset($_SESSION['userid'])) {
 	?>
+
   <!-- Header -->
     <header id="header">
       <div class="logo"><a href="index.php">Today's Masterpiece</a></div>
