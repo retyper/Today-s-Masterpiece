@@ -123,7 +123,7 @@ if(isset($_POST['impression_id'])){
     }
     </style>
     <script type="text/javascript" src="js/phpex.js"></script>
-
+    <script data-ad-client="ca-pub-2507172034605671" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	</head>
 	<body class="subpage">
 
