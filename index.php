@@ -37,9 +37,30 @@ if(isset($row['created'])){
 	<head>
 		<title>Today's Masterpiece</title>
     <meta charset="utf-8" />
+    <meta name="description" content="매일 아침 8시에 만나는 나만의 세계명화 컬렉션">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google-site-verification" content="IQJrorhOcBzbwueQPyAH-p35CchiP-TiDFgY9k9xq18" />
+    <meta property="og:type" content="website">
+    <!-- 이거 써야됨
+    <meta property="og:title" content="페이지 제목">
+    <meta property="og:description" content="페이지 설명">
+    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg">
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="페이지 제목">
+    <meta name="twitter:description" content="페이지 설명">
+    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html">
+    <meta name="twitter:domain" content="사이트 명"> -->
 		<link rel="stylesheet" href="assets/css/main.css" />
     <script data-ad-client="ca-pub-2507172034605671" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Clarity tracking code for https://todays-masterpiece.com/ -->
+    <script>
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "5icrz6kghe");
+    </script>
 	</head>
 	<body>
 
