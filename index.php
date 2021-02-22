@@ -35,7 +35,24 @@ if(isset($row['created'])){
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
-		<title>Today's Masterpiece</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+		<title>오늘의 명화</title>
     <meta charset="utf-8" />
     <meta name="description" content="매일 아침 8시에 만나는 나만의 세계명화 컬렉션">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -117,7 +134,7 @@ if(isset($row['created'])){
        				<div class="inner">
        					<header class="align-center">
        						<p class="special">광고를 시청하시면 오늘의 명화 1회 활성화</p>
-       						<h2>광고배너</h2>
+       						<h1>광고배너</h1>
        					</header>
        				 </div>
        			</section>
@@ -155,8 +172,8 @@ if(isset($row['created'])){
              <img src="images/slide01.jpg" alt="" />
              <div class="inner">
                <header>
-                 <p>미(美)를 창조·표현하려고 하는 인간 활동 및 그 작품</a></p>
-                 <h2>예술</h2>
+                <p>Today's Masterpiece</p>
+                 <h2>오늘의 명화</h2>
                </header>
              </div>
            </article>
@@ -164,8 +181,8 @@ if(isset($row['created'])){
              <img src="images/slide02.jpg" alt="" />
              <div class="inner">
                <header>
-                 <p>새로운 것을 처음으로 만드는 것</p>
-                 <h2>창작</h2>
+                 <p>인류 역사에서 걸작을 남긴 수 많은 대가들이 기다리고 있습니다</p>
+                 <h2>세계의 대가들</h2>
                </header>
              </div>
            </article>
@@ -173,8 +190,8 @@ if(isset($row['created'])){
              <img src="images/slide03.jpg"  alt="" />
              <div class="inner">
                <header>
-                 <p>원상과 비슷한 모상을 만들어내는 것</p>
-                 <h2>모방</h2>
+                 <p>매일 아침 8시 새로운 명화를 만나보세요</p>
+                 <h2>매일 새로운 명화</h2>
                </header>
              </div>
            </article>
@@ -182,8 +199,8 @@ if(isset($row['created'])){
              <img src="images/slide04.jpg"  alt="" />
              <div class="inner">
                <header>
-                 <p>예술 작품을 이해하여 즐기고 평가하는 것</p>
-                 <h2>감상</h2>
+                 <p>예술작품을 수집하고 나만의 감상을 작성하세요</p>
+                 <h2>나만의 감상</h2>
                </header>
              </div>
            </article>
@@ -191,8 +208,8 @@ if(isset($row['created'])){
              <img src="images/slide05.jpg"  alt="" />
              <div class="inner">
                <header>
-                 <p>대상을 파악하고 가능성을 예측하며 지식이나 개념을 만들어 내는 활동</p>
-                 <h2>사유</h2>
+                 <p>내가 감상한 작품을 함께 본 사람들과 감상을 공유하세요</p>
+                 <h2>공유와 나눔, 그리고 공감</h2>
                </header>
              </div>
            </article>
