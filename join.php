@@ -27,7 +27,7 @@
 <body>
       <!-- Header -->
         <header id="header" class="alt">
-          <div class="logo"><a href="index.html">Today's Masterpiece <span>by Retyper</span></a></div>
+          <div class="logo"><a href="index.php">Today's Masterpiece <span>by Retyper</span></a></div>
           <a href="#menu">Menu</a>
         </header>
 

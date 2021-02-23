@@ -51,6 +51,12 @@ if(isset($row['created'])){
       } else {
         header('location: record.php');
       }
+    } else {
+      ?>      <script>
+                  alert("오늘의 명화는 이미 저장되었습니다. My collection 에서 확인하세요:)");
+                  location.replace("./index.php");
+              </script>
+      <?php
     }
   } else{
     if($Y_target_time > $lastcreated_time){
@@ -75,6 +81,12 @@ if(isset($row['created'])){
       } else {
         header('location: record.php');
       }
+    } else{
+      ?>      <script>
+                  alert("오늘의 명화는 이미 저장되었습니다. 아침 8시 이후에 다시 시도하세요:)");
+                  location.replace("./index.php");
+              </script>
+      <?php
     }
   }
 } else{

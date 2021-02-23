@@ -15,15 +15,19 @@ if(isset($row['created'])){
   $lastcreated_time = strtotime($row['created']);
   $Y_target_time = $target_time - "86400";
 
-  $today_link = '오늘의 명화 감상이 작성되었습니다!';
+  $today_link = '오늘의 감상이 작성되었습니다!';
 
   if($now >= $target_time){
     if($lastcreated_time < $target_time){
     	$today_link = '<a href="today.php">오늘의 명화 감상하기</a>';
+    } else{
+      $today_link = '오늘의 감상이 작성되었습니다!';
     }
   } else{
     if($Y_target_time > $lastcreated_time){
       $today_link = '<a href="today.php">오늘의 명화 감상하기</a>';
+    } else{
+      $today_link = '오늘의 감상이 작성되었습니다!';
     }
   }
 } else{
@@ -156,7 +160,7 @@ if(isset($row['created'])){
 
          <!-- Header -->
            <header id="header">
-             <div class="logo"><a href="index.html">Today's Masterpiece <span>by Retyper</span></a></div>
+             <div class="logo"><a href="index.php">Today's Masterpiece <span>by Retyper</span></a></div>
              <a href="#menu">Menu</a>
            </header>
 
@@ -191,7 +195,7 @@ if(isset($row['created'])){
              <div class="inner">
                <header>
                  <p>매일 아침 8시 새로운 명화를 만나보세요</p>
-                 <h2>매일 새로운 명화</h2>
+                 <h3>마음을 여는 아침</h3>
                </header>
              </div>
            </article>

@@ -22,12 +22,14 @@
     <meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <script src="js/jquery-1.7.2.min.js"></script>
   </head>
 	<body class="subpage">
 
     <!-- Header -->
       <header id="header">
-        <div class="logo"><a href="index.php">Today's Masterpiece <span>by Retyper</span></a></div>
+        <div class="logo"><a href="index.php">Today's Masterpiece</a></div>
         <a href="#menu">Menu</a>
       </header>
 
@@ -44,7 +46,7 @@
         <section id="main" class="container">
 
           <div class="image fit"><!--record 에서 전달된 주소 필요함..-->
-            <a href="<?=$_POST['picture_path']?>"><img id="mainpic" src="<?=$_POST['picture_path']?>" alt="그림을 찾을수 없습니다."></a>
+            <a href="<?=$_POST['picture_path']?>" data-lightbox="<?=$_POST['picture_name']?>" data-title="<?=$_POST['picture_name']?>"><img src="<?=$_POST['picture_path']?>" alt="그림을 찾을수 없습니다."></a>
           </div>
 
           <hr/>
