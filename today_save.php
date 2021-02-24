@@ -21,6 +21,7 @@ $result = mysqli_query($conn,$sql);
 $row = mysqli_fetch_array($result);
 
 date_default_timezone_set('Asia/Seoul');
+$time = date("Y-m-d H:i:s");
 
 if(isset($row['created'])){
   $now = strtotime(date("Y-m-d H:i:s"));
@@ -41,7 +42,7 @@ if(isset($row['created'])){
               '{$filtered['audience_id']}',
               '{$filtered['picture_id']}',
               '{$filtered['impression']}',
-              NOW()
+              '{$time}'
           )
       ";
       $result = mysqli_query($conn, $sql);
@@ -71,7 +72,7 @@ if(isset($row['created'])){
               '{$filtered['audience_id']}',
               '{$filtered['picture_id']}',
               '{$filtered['impression']}',
-              NOW()
+              '{$time}'
           )
       ";
       $result = mysqli_query($conn, $sql);
@@ -101,7 +102,7 @@ if(isset($row['created'])){
           '{$filtered['audience_id']}',
           '{$filtered['picture_id']}',
           '{$filtered['impression']}',
-          NOW()
+          '{$time}'
       )
   ";
   $result = mysqli_query($conn, $sql);

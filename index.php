@@ -186,7 +186,7 @@ if(isset($row['created'])){
              <div class="inner">
                <header>
                  <p>인류 역사에서 걸작을 남긴 수 많은 대가들이 기다리고 있습니다</p>
-                 <h2>세계의 대가들</h2>
+                 <h3>세계의 대가들</h3>
                </header>
              </div>
            </article>
@@ -204,7 +204,7 @@ if(isset($row['created'])){
              <div class="inner">
                <header>
                  <p>예술작품을 수집하고 나만의 감상을 작성하세요</p>
-                 <h2>나만의 감상</h2>
+                 <h3>나만의 감상</h3>
                </header>
              </div>
            </article>
@@ -213,7 +213,7 @@ if(isset($row['created'])){
              <div class="inner">
                <header>
                  <p>내가 감상한 작품을 함께 본 사람들과 감상을 공유하세요</p>
-                 <h2>공유와 나눔, 그리고 공감</h2>
+                 <h3>공유와 나눔, 그리고 공감</h3>
                </header>
              </div>
            </article>
