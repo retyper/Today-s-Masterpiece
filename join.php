@@ -19,7 +19,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <title>오늘의 명화</title>
+  <title>오늘의 명화 Today's Masterpiece</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -41,7 +41,7 @@
         <!-- Banner -->
         <section class="banner full">
           <article>
-            <img src="images/slide01.jpg" alt="" />
+            <img src="images/slide01.jpg" alt="그림을 찾을수 없습니다." />
             <div class="inner">
               <header>
                 <p>미(美)를 창조·표현하려고 하는 인간 활동 및 그 작품</a></p>
@@ -50,7 +50,7 @@
             </div>
           </article>
           <article>
-            <img src="images/slide02.jpg" alt="" />
+            <img src="images/slide02.jpg" alt="그림을 찾을수 없습니다." />
             <div class="inner">
               <header>
                 <p>새로운 것을 처음으로 만드는 것</p>
@@ -59,7 +59,7 @@
             </div>
           </article>
           <article>
-            <img src="images/slide03.jpg"  alt="" />
+            <img src="images/slide03.jpg"  alt="그림을 찾을수 없습니다." />
             <div class="inner">
               <header>
                 <p>원상과 비슷한 모상을 만들어내는 것</p>
@@ -68,7 +68,7 @@
             </div>
           </article>
           <article>
-            <img src="images/slide04.jpg"  alt="" />
+            <img src="images/slide04.jpg"  alt="그림을 찾을수 없습니다." />
             <div class="inner">
               <header>
                 <p>예술 작품을 이해하여 즐기고 평가하는 것</p>
@@ -77,7 +77,7 @@
             </div>
           </article>
           <article>
-            <img src="images/slide05.jpg"  alt="" />
+            <img src="images/slide05.jpg"  alt="그림을 찾을수 없습니다." />
             <div class="inner">
               <header>
                 <p>대상을 파악하고 가능성을 예측하며 지식이나 개념을 만들어 내는 활동</p>

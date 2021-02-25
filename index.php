@@ -57,7 +57,7 @@ if(isset($row['created'])){
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-		<title>오늘의 명화</title>
+		<title>오늘의 명화 Today's Masterpiece</title>
     <meta charset="utf-8" />
     <meta name="description" content="매일 아침 8시에 만나는 나만의 세계명화 컬렉션">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -174,16 +174,17 @@ if(isset($row['created'])){
          <!-- Banner -->
          <section class="banner full">
            <article>
-             <img src="images/slide01.jpg" alt="" />
+             <img src="images/slide01.jpg" alt="그림을 찾을수 없습니다." />
              <div class="inner">
                <header>
-                <p>Today's Masterpiece</p>
                  <h2>오늘의 명화</h2>
+                 <p></p>
+                 <h1>Today's Masterpiece</h1>
                </header>
              </div>
            </article>
            <article>
-             <img src="images/slide02.jpg" alt="" />
+             <img src="images/slide02.jpg" alt="그림을 찾을수 없습니다." />
              <div class="inner">
                <header>
                  <p>인류 역사에서 걸작을 남긴 수 많은 대가들이 기다리고 있습니다</p>
@@ -192,7 +193,7 @@ if(isset($row['created'])){
              </div>
            </article>
            <article>
-             <img src="images/slide03.jpg"  alt="" />
+             <img src="images/slide03.jpg"  alt="그림을 찾을수 없습니다." />
              <div class="inner">
                <header>
                  <p>매일 아침 8시 새로운 명화를 만나보세요</p>
@@ -201,7 +202,7 @@ if(isset($row['created'])){
              </div>
            </article>
            <article>
-             <img src="images/slide04.jpg"  alt="" />
+             <img src="images/slide04.jpg"  alt="그림을 찾을수 없습니다." />
              <div class="inner">
                <header>
                  <p>예술작품을 수집하고 나만의 감상을 작성하세요</p>
@@ -210,7 +211,7 @@ if(isset($row['created'])){
              </div>
            </article>
            <article>
-             <img src="images/slide05.jpg"  alt="" />
+             <img src="images/slide05.jpg"  alt="그림을 찾을수 없습니다." />
              <div class="inner">
                <header>
                  <p>내가 감상한 작품을 함께 본 사람들과 감상을 공유하세요</p>
