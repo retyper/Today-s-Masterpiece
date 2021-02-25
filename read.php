@@ -64,11 +64,12 @@ header("location:login.php");
         <div class="inner">
           <div class="box">
             <div class="content">
+
               <header class="align-center">
                 <h2 style="margin-bottom: 0px;"><?=$_POST['picture_name']?></h2><p></p>
                 <h3><?=$_POST['author']?>, <?=$_POST['info']?></h3>
-
               </header>
+
               <div class="12u$">
                 <form action="update.php" method="post" class="align-center" >
                   <input type = "hidden" value = "<?=$_POST['picture_id']?>" name = "picture_id">

@@ -7,12 +7,16 @@ if(!isset($_SESSION["userid"]))
 header("location:login.php");
 }
 
+//ini_set('display_errors',1);
+
 $picname = $_POST['picname'];
 
 
 //감상 리스트 불러오기 + 새로 작성/내글 보기 버튼
 $sql = "SELECT * FROM all_impression WHERE picture_name='$picname' ORDER BY like_count DESC";
+//var_dump ($sql);
 $result = mysqli_query($conn,$sql);
+//var_dump ($result);
 $list = '';
 
 $upload_link ='<li>

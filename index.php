@@ -2,7 +2,8 @@
     include "db.php";
 
 $myid = $_SESSION['audience_id'];
-
+//디버깅
+//ini_set('display_errors',1);
 $sql = "SELECT * FROM my_impression WHERE audience_id ='$myid' ORDER BY created DESC limit 1";
 $result = mysqli_query($conn,$sql);
 $row = mysqli_fetch_array($result);
