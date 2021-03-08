@@ -80,6 +80,7 @@ if(isset($_POST['impression_id'])){
     'impression'=>htmlspecialchars($row['impression']),
     'writer'=>htmlspecialchars($row['audience'])
   );
+  $article['impression'] = nl2br($article['impression']);
 
   $writer = "<p>by {$article['writer']}</p>";
 

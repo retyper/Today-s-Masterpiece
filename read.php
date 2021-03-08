@@ -5,6 +5,7 @@ if(!isset($_SESSION["userid"]))
 
 header("location:login.php");
 }
+$impression = nl2br($_POST['impression']);
  ?>
 
 <!DOCTYPE html>
@@ -75,12 +76,12 @@ header("location:login.php");
                   <input type = "hidden" value = "<?=$_POST['picture_id']?>" name = "picture_id">
                   <input type = "hidden" value = "<?=$_POST['picture_name']?>" name = "picture_name">
                   <input type = "hidden" value = "<?=$_POST['picture_path']?>" name = "picture_path">
-                  <input type = "hidden" value = "<?=$_POST['impression']?>" name = "impression">
+                  <input type = "hidden" value = "<?=$impression?>" name = "impression">
                   <input type = "hidden" value = "<?=$_POST['author']?>" name = "author">
                   <input type = "hidden" value = "<?=$_POST['info']?>" name = "info">
                   <br><br>
                   <p>
-                  <?=$_POST['impression']?>
+                  <?=$impression?>
                   </p>
                   <br><br>
                   <input type="submit" value="수정">
